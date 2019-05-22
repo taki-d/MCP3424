@@ -33,7 +33,7 @@ uint8_t MCP3424::startNewConversion(Channel ch) {
 }
 
 /* tries to find the highest gain */
-Gain MCP3424::findGain(double value) const {
+Gain MCP3424::findGain(double & value) const {
 
     uint8_t g;
     
